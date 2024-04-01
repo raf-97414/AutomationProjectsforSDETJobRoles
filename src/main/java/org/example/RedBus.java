@@ -35,11 +35,11 @@ public class RedBus {
       wb.findElement(By.xpath("//div[@id='onwardCal']//div[@class='sc-jzJRlG dPBSOp']//div[@class='DayNavigator__CalendarHeader-qj8jdz-1 fxvMrr']//div[3]")).click();
       String month1 = wb.findElement(By.xpath("//div[@id='onwardCal']//div[@class='sc-jzJRlG dPBSOp']//div[@class='DayNavigator__CalendarHeader-qj8jdz-1 fxvMrr']//div[2]")).getText();
 
-      if(month1.contains("Jun") && month1.contains("2024"))
+      if(month1.contains("Jun") && month1.contains("2025"))
       {
         wb.findElement(By.xpath("//div[@id='onwardCal']//div[@class='sc-jzJRlG dPBSOp']/div/div//div[3]//span[text()='12']")).click();
-        String dateAndMonth = wb.findElement(By.xpath("//div[@id='onwardCal']//div[@class='sc-kAzzGY llxTcS']/text[2]")).getText();
-        String year = wb.findElement(By.xpath("//div[@id='onwardCal']//div[@class='sc-kAzzGY llxTcS']/text[3]")).getText();
+        //String dateAndMonth = wb.findElement(By.xpath("//div[@id='onwardCal']//div[@class='sc-kAzzGY llxTcS']/text[2]")).getText();
+        //String year = wb.findElement(By.xpath("//div[@id='onwardCal']//div[@class='sc-kAzzGY llxTcS']/text[3]")).getText();
 
 
         //System.out.println(dateAndMonth + " " + year);proof to see if desired date is chosen
