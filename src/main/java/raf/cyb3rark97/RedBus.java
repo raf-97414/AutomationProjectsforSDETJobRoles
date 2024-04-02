@@ -3,15 +3,21 @@ package raf.cyb3rark97;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 
 public class RedBus {
 
-  public static void main(String[] args) throws InterruptedException {
-    WebDriver wb = new ChromeDriver();
+  public static void main(String[] args) throws InterruptedException, MalformedURLException {
+    //WebDriver wb = new ChromeDriver();
+    ChromeOptions co = new ChromeOptions();
+    WebDriver wb = new RemoteWebDriver(new URL("http://192.168.1.4:4444"),co);
     wb.get("https://www.redbus.in/");
     wb.findElement(By.xpath("//input[@id='src']")).sendKeys("Ben");//@class='sc-gZMcBi grvhsy'
     FluentWait <WebDriver> wait = new FluentWait<>(wb);
