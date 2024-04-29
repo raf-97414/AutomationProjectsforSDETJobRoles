@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="vmotestngsuite">
+    <test name="chrome">
+        <parameter name="email" value="cyb3rark97@gmail.com"></parameter>
+        <parameter name="firstName" value="Raf"></parameter>
+        <parameter name="lastName" value="Fer"></parameter>
+        <parameter name="phone" value="9886513772"></parameter>
+        <parameter name="password" value="Rafelia14041997@"></parameter>
+        <parameter name="website" value="testark97.blog"></parameter>
+        <classes>
+            <class name="web.VMO.testNgVMO">
+            </class>
+        </classes>
+
+    </test>
+    <test name="firefox">
+        <parameter name="email" value="cyb3rark97@gmail.com"></parameter>
+        <parameter name="firstName" value="Raf"></parameter>
+        <parameter name="lastName" value="Fer"></parameter>
+        <parameter name="phone" value="9886513772"></parameter>
+        <parameter name="password" value="Rafelia14041997"></parameter>
+        <parameter name="website" value="testark97.blog"></parameter>
+        <classes>
+            <class name="web.VMO.testNgVMOFirefox">
+            </class>
+        </classes>
+    </test>
+</suite>

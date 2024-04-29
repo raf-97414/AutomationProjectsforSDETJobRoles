@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "TestNg">
+    <test name="testngdemo" parallel="tests" thread-count="3"><!--for parallel execution at methods level and setting thread count -->
+        <parameter name="browser" value="chrome">
+        </parameter>
+
+        <classes>
+            <class name="pom.mainPOM">
+            </class>
+        </classes>
+          </test>
+</suite>
