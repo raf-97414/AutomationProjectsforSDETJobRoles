@@ -126,20 +126,5 @@ public class freshToHome {
            System.out.println("Please enter a url in format - https://url.com or http://url.com");
        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
